@@ -9,4 +9,8 @@ function noSpace(x){
 
 function noSpace(x){
     return x.replace(/\s+/g, '');
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aceea033a00bafb3c05b38879af259ee3c3c07c8

@@ -11,4 +11,8 @@ function maps(x){
 
 function maps(x){
     return dbldarray = x.map((x) => x * 2);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aceea033a00bafb3c05b38879af259ee3c3c07c8
