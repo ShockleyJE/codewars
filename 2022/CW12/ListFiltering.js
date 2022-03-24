@@ -14,3 +14,12 @@ function filter_list(l) {
     }
     return fltrdlist;
   }
+
+  // better methods, using .filter
+  function filter_list(l) {
+    return l.filter(function(v) {return typeof v == 'number'})
+  }
+
+  function filter_list(l) {
+    return l.filter(v => typeof v == "number")
+   }
