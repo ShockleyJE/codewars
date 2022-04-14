@@ -11,7 +11,7 @@ function spinWords(string){
     let words = string.split(' ')
 
     spunWords = words.map(word =>{
-        if (word.length > 5){
+        if (word.length >= 5){
             return reverseString(word)
         } else {
             return word
@@ -20,4 +20,17 @@ function spinWords(string){
 
     return spunWords.join(' ')
 
+  }
+
+  //Solution 1, also a split / map approach, with the reverse string logic included in a ternary 1-liner joined back on ' '. Nothing novel, just concise
+
+  function spinWords(words){
+    return words.split(' ').map(function (word) {
+      return (word.length > 4) ? word.split('').reverse().join('') : word;
+    }).join(' ');
+  }
+
+  //Solution 2, regex sorcery
+  function spinWords(string){
+    return string.replace(/\w{5,}/g, function(w) { return w.split('').reverse().join('') })
   }
