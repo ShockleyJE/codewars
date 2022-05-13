@@ -13,3 +13,6 @@ function bingo(a) {
       return 'LOSE'
     }
   }
+
+  //Solution 1:  I should come back to this to understand the every method.
+  const bingo = ar => [2,7,9,14,15].every(e => ar.includes(e)) ? 'WIN' : 'LOSE';
