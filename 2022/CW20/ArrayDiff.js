@@ -24,3 +24,9 @@ arrayDiff([1,2,2,2,3],[2])
 function array_diff(a, b) {
     return a.filter(e => !b.includes(e));
   }
+
+//Solution 2: use Sets
+function array_diff(a, b) {
+    b = new Set(b)
+    return a.filter(v => !b.has(v))
+  }
