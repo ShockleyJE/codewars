@@ -4,7 +4,8 @@
   "description": "My code wars!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./2022/CW20/RangeExtraction.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ShockleyJE/codewars/issues"
   },
-  "homepage": "https://github.com/ShockleyJE/codewars#readme"
+  "homepage": "https://github.com/ShockleyJE/codewars#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
