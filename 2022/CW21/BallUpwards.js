@@ -18,13 +18,14 @@ function max_ball(v_kmh) {
     return initialVeloMS * t - 0.5 * initialVeloMS * t * t;
   }
   // Array of dict values (time, velo)
-  let time_series = [{ 0: 0 }];
+  let time_series = [0];
   let t = 0;
   // do while loop to construct time series up until it peaks
   do {
     t = t + 1;
-    time_series.push({ t: calcVelocity(kiloHourToMetersSecond(v_kmh), t) });
+    time_series.push(calcVelocity(kiloHourToMetersSecond(v_kmh), t));
     console.log(time_series);
+    console.log(`${time_series[t]} > ${time_series[t - 1]} ???`);
   } while (time_series[t] > time_series[t - 1]);
 
   return time_series[t - 1];
