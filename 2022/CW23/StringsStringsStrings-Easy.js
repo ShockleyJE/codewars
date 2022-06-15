@@ -3,27 +3,6 @@
 // Numbers: preserve decimal, signedness
 // Arrays: Numbers only, see number. Output format [Number, Number]. Whitespaces do not matter
 
-// function toString(value) {
-//   function stringifyNum(num) {
-//     return "" + num;
-//   }
-//   //find the type of the the value
-//   if (typeof value === "number") {
-//     return stringifyNum(value);
-//   } else if (Array.isArray(value) === true) {
-//     return (
-//       "[" +
-//       value.reduce(
-//         (previousValue, currentValue) => stringifyNum(value) + ",",
-//         ""
-//       ) +
-//       "]"
-//     );
-//   } else if (typeof value === "boolean") {
-//     return value ? "true" : "false";
-//   }
-// }
-
 Number.prototype.toString = function () {
   return "" + this.valueOf();
 };
