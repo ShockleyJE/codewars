@@ -11,4 +11,6 @@ function XO(input){
     // the resulting length will be half of the previous array length
 
     str = str.toLowerCase().split('');
-    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;}
+    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+
+}
