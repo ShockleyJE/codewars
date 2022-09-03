@@ -6,7 +6,7 @@ def valid_braces(string):
   stack = []
 
   for c in string:
-    if c in close:
+    if c in close and len(stack) is not 0:
         c_pair = stack.pop()
         if close.index(c) == open.index(c_pair):
             print(f"{c} matches to {c_pair}")
@@ -23,7 +23,7 @@ def valid_braces(string):
   return False
 
 
-print(f"returned {valid_braces("()")}")
-print(f"returned {valid_braces("(}")}")
-print(f"returned {valid_braces("[(]")}")
-print(f"returned {valid_braces("{}()[]")}")
+print(valid_braces("()"))
+print(valid_braces("(}"))
+print(valid_braces("[(]"))
+print(valid_braces("{}()[]"))
