@@ -1,4 +1,4 @@
-/*
+/* https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/
  * From the perspective of the runtime it's not the most efficient solution.
  * It could be done with just sort and one reduce method call.
  */
