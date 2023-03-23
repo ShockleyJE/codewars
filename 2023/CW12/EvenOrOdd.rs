@@ -5,3 +5,15 @@ fn even_or_odd(i: i32) -> &'static str {
     }
     val
 }
+
+
+// Ahhhh I should have use arm match. It's always arm day
+
+fn even_or_odd(i: i32) -> &'static str {
+    match i % 2 {
+      0 => "Even",
+      _ => "Odd",
+    }
+  }
+  
+  76 simila
